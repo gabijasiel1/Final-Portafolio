@@ -39,5 +39,5 @@ npm run deploy
 After deployment, the site will be available at:
 
 ```text
-https://gabijasiel1.github.io/personal-portfolio
+https://gabijasiel1.github.io/Final-Portafolio
 ```

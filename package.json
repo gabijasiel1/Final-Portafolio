@@ -2,7 +2,7 @@
   "name": "personal-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://gabijasiel1.github.io/personal-portfolio",
+  "homepage": "https://gabijasiel1.github.io/Final-Portafolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
