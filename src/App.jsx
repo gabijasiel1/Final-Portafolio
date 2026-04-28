@@ -97,20 +97,34 @@ function App() {
         <section id="about" className="section about-section">
           <div className="section-heading reveal">
             <p className="eyebrow">About</p>
-            <h2>Creative, organized, and always learning.</h2>
+            <h2>Creative, detail-oriented, and passionate about interactive digital experiences.</h2>
           </div>
           <div className="about-grid">
             <article className="about-card reveal">
               <h3>Bio</h3>
               <p>
-                I am a student developer focused on React, front-end design, and building projects that are easy
-                to use. I enjoy turning class assignments into polished portfolio work that can keep growing.
+                I am a Digital Media student at the University of Central Florida, specializing in Web &
+                Interactive Media. I enjoy creating clean, engaging, and user-friendly digital experiences that
+                combine design, storytelling, and functionality. My work focuses on front-end development, UX/UI
+                design, and interactive projects that help users connect with information in a clear and meaningful
+                way.
               </p>
             </article>
             <article className="about-card reveal">
               <h3>Skills</h3>
               <div className="skill-list" aria-label="Skills">
-                {['React', 'JavaScript', 'HTML', 'CSS', 'Responsive Design', 'GitHub Pages'].map((skill) => (
+                {[
+                  'React',
+                  'JavaScript',
+                  'HTML',
+                  'CSS',
+                  'Responsive Design',
+                  'UX/UI Design',
+                  'Front-End Development',
+                  'GitHub Pages',
+                  'Web Design',
+                  'Interactive Media',
+                ].map((skill) => (
                   <span key={skill}>{skill}</span>
                 ))}
               </div>
@@ -118,8 +132,10 @@ function App() {
             <article className="about-card reveal">
               <h3>Interests</h3>
               <p>
-                I like projects that combine visuals, interaction, and practical user flows, especially apps that
-                help people track goals, learn something, or explore a story.
+                I am interested in projects that combine visual design, user interaction, and practical digital
+                solutions. I enjoy building websites, app concepts, and interactive experiences that are easy to use
+                and visually engaging. I am especially drawn to UX/UI design, storytelling, front-end development,
+                and digital tools that help people learn, explore, or complete tasks more comfortably.
               </p>
             </article>
           </div>
