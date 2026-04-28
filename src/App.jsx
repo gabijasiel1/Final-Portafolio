@@ -12,7 +12,7 @@ function App() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
   const heroStyle = {
-    backgroundImage: `linear-gradient(90deg, rgba(23, 32, 38, 0.82), rgba(23, 32, 38, 0.36)), url("${import.meta.env.BASE_URL}images/hero-portfolio.png")`,
+    backgroundImage: `linear-gradient(90deg, rgba(18, 33, 32, 0.88), rgba(18, 33, 32, 0.52)), url("${import.meta.env.BASE_URL}images/bogota-hero.jpg")`,
   };
 
   const errors = useMemo(() => {
@@ -57,8 +57,8 @@ function App() {
   return (
     <div className="site">
       <header className="site-header">
-        <a className="brand" href="#home" aria-label="Gabija Siel home">
-          GS
+        <a className="brand" href="#home" aria-label="Gabriela Rodriguez home">
+          <img src={`${import.meta.env.BASE_URL}images/123456.jpg`} alt="" />
         </a>
         <nav className="nav" aria-label="Main navigation">
           {navItems.map((item) => (
@@ -72,19 +72,24 @@ function App() {
       <main>
         <section id="home" className="hero section" style={heroStyle}>
           <div className="hero-content reveal">
-            <p className="eyebrow">React Developer Portfolio</p>
-            <h1>Hi, I&apos;m Gabija Siel.</h1>
-            <p className="hero-copy">
-              I build clean, responsive web experiences with React, thoughtful design, and interactive features
-              that make projects feel complete.
-            </p>
-            <div className="hero-actions" aria-label="Portfolio actions">
-              <a className="button button-primary" href="#projects">
-                View Projects
-              </a>
-              <a className="button button-secondary" href="#contact">
-                Contact Me
-              </a>
+            <div className="hero-text">
+              <p className="eyebrow">Welcome to my portfolio</p>
+              <h1>Hi, I&apos;m Gabriela Rodriguez.</h1>
+              <p className="hero-copy">
+                I build clean, responsive web experiences with React, thoughtful design, and interactive features
+                that make projects feel complete.
+              </p>
+              <div className="hero-actions" aria-label="Portfolio actions">
+                <a className="button button-primary" href="#projects">
+                  View Projects
+                </a>
+                <a className="button button-secondary" href="#contact">
+                  Contact Me
+                </a>
+              </div>
+            </div>
+            <div className="hero-portrait">
+              <img src={`${import.meta.env.BASE_URL}images/headshot.png`} alt="Gabriela Rodriguez" />
             </div>
           </div>
         </section>
@@ -210,7 +215,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>Built with React by Gabija Siel.</p>
+        <p>Built with React by Gabriela Rodriguez.</p>
         <a href="#home">Back to top</a>
       </footer>
     </div>

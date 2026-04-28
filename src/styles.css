@@ -5,7 +5,8 @@
   --paper: #fbf7f0;
   --surface: #ffffff;
   --teal: #0f766e;
-  --coral: #d95c48;
+  --green: #2f7d5a;
+  --blue: #2f6f9f;
   --gold: #d99f32;
   --line: rgba(23, 32, 38, 0.14);
   --shadow: 0 18px 45px rgba(23, 32, 38, 0.14);
@@ -47,21 +48,27 @@ img {
   justify-content: space-between;
   gap: 24px;
   padding: 16px clamp(18px, 5vw, 72px);
-  background: rgba(251, 247, 240, 0.88);
+  background: rgba(232, 237, 229, 0.9);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
 }
 
 .brand {
-  display: grid;
-  width: 44px;
-  height: 44px;
-  place-items: center;
+  display: block;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
   border-radius: 8px;
-  color: #ffffff;
-  background: var(--teal);
-  font-weight: 900;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(23, 32, 38, 0.16);
   text-decoration: none;
+}
+
+.brand img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .nav {
@@ -91,7 +98,7 @@ img {
 
 .hero {
   min-height: calc(100vh - 76px);
-  display: grid;
+  display: flex;
   align-items: center;
   background-position: center;
   background-size: cover;
@@ -109,8 +116,11 @@ img {
 }
 
 .hero-content {
-  margin-left: max(0px, calc((100vw - 1120px) / 2));
-  max-width: 680px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 390px);
+  gap: clamp(28px, 6vw, 78px);
+  align-items: center;
+  max-width: 1120px;
 }
 
 .eyebrow {
@@ -132,7 +142,7 @@ p {
 h1 {
   max-width: 720px;
   margin-bottom: 18px;
-  font-size: clamp(3rem, 9vw, 6.5rem);
+  font-size: clamp(3rem, 8vw, 6.35rem);
   line-height: 0.95;
 }
 
@@ -153,6 +163,25 @@ h3 {
   color: rgba(255, 255, 255, 0.86);
   font-size: clamp(1.05rem, 2vw, 1.3rem);
   line-height: 1.7;
+}
+
+.hero-portrait {
+  position: relative;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(8px);
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .hero-actions,
@@ -179,7 +208,8 @@ h3 {
 
 .button-primary {
   color: #ffffff;
-  background: var(--coral);
+  background: linear-gradient(135deg, var(--green), var(--blue));
+  box-shadow: 0 14px 30px rgba(47, 125, 90, 0.32);
 }
 
 .button-secondary {
@@ -369,6 +399,14 @@ h3 {
 
   .hero {
     min-height: 680px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-portrait {
+    max-width: 360px;
   }
 }
 
