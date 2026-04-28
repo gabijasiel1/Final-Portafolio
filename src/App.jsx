@@ -221,8 +221,8 @@ function App() {
               <a href="https://github.com/gabijasiel1" target="_blank" rel="noreferrer">
                 GitHub
               </a>
-              <a href="mailto:gabijasiel1@example.com">gabijasiel1@example.com</a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+              <a href="mailto:gabijasiel1@gmail.com">gabijasiel1@gmail.com</a>
+              <a href="https://www.linkedin.com/in/gabriela-rodriguez2002/" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
             </aside>
